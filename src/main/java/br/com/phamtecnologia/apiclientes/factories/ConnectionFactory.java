@@ -1,10 +1,12 @@
 package br.com.phamtecnologia.apiclientes.factories;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 
+@Component
 public class ConnectionFactory {
 
     @Value("${database.host}")
